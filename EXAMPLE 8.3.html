@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User-defined-object</title>
+	<script type="text/javascript">
+		var toy = new Object();
+		toy.name = "Lego";
+		toy.color = "red";
+		toy.shape = "rectangle";
+		toy.display=printObject;
+
+		function printObject() {
+			document.write("<b>The toy is a " + toy.name + ".<br>");
+			document.write("It is a " + toy.color + "" + toy.
+				shape + ".<br />");
+			// body...
+		}
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		toy.display();
+		toy.color="blue";
+		toy.display();
+	</script>
+
+</body>
+</html>
